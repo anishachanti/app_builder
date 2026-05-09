@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <h1>Todo List</h1>
+
+        <!-- Input for new tasks -->
+        <input id="new-task-input" type="text" placeholder="What needs to be done?" autocomplete="off" />
+        <button id="add-task-button">Add</button>
+
+        <!-- Task list container -->
+        <ul id="task-list" class="task-list"></ul>
+
+        <!-- Filter buttons -->
+        <div class="filters">
+            <button data-filter="all" class="filter-button active">All</button>
+            <button data-filter="active" class="filter-button">Active</button>
+            <button data-filter="completed" class="filter-button">Completed</button>
+        </div>
+
+        <!-- Additional UI elements (e.g., edit input) will be injected here by JavaScript -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
